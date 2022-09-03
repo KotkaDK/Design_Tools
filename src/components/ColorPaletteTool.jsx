@@ -19,11 +19,11 @@ function ColorPaletteTool() {
       </div>
       <div className="DivToolContainerSide right DivPhonePreview">
         <div className="DivPhone PreviewBackgroundRoot">
-          <div className="PreviewBackgroundPrimary" id="PreviewBlobTopLeft"></div>
-          <div className="PreviewBackgroundSecondary" id="PreviewBlobBottomRight"></div>
+          <div className="PreviewBackgroundPrimary PreviewBlobTopLeft"></div>
+          <div className="PreviewBackgroundSecondary PreviewBlobBottomRight"></div>
         </div>
         <div className="DivPhone PreviewBackgroundRoot">
-          
+
         </div>
       </div>
     </div>
