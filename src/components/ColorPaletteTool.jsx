@@ -11,17 +11,18 @@ function ColorPaletteTool() {
               <ColorPicker color="#3D424A" number="2"/>
               <ColorPicker color="#57BEE6" number="3"/>
               <ColorPicker color="#C0C0BE" number="4"/>
-              <ColorPicker color="#E6E5DE" number="5"/>
+              <ColorPicker color="#F1F1F1" number="5"/>
             </div>
             
           </div>
         </div>
       </div>
       <div className="DivToolContainerSide right DivPhonePreview">
-        <div className="DivPhone">
-
+        <div className="DivPhone PreviewBackgroundRoot">
+          <div className="PreviewBackgroundPrimary" id="PreviewBlobTopLeft"></div>
+          <div className="PreviewBackgroundSecondary" id="PreviewBlobBottomRight"></div>
         </div>
-        <div className="DivPhone">
+        <div className="DivPhone PreviewBackgroundRoot">
           
         </div>
       </div>

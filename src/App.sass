@@ -1,5 +1,5 @@
 $light-color: #f1f1f1
-$main-color: #2BA586
+$main-color: #CFCFCF 
 $dark-color: #232323
 
 $hover: 110%
@@ -142,13 +142,75 @@ button
   min-width: 281.25px
   width: 281.25px
 
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none 
+  user-select: none
+
   min-height: 609px
   height: 609px
 
   margin: 36px
   position: relative
 
+  overflow: hidden
+
   border-radius: 25px
 
   background-color: white
   box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.2), 0 6px 20px 0 rgba(35, 35, 35, 0.15)
+
+#PreviewBlobTopLeft
+  position: absolute
+  width: 280px
+  height: 280px
+  border-radius: 100%
+  transform: translate(-50%,-50%)
+
+#PreviewBlobBottomRight
+  position: absolute
+  width: 280px
+  height: 280px
+  border-radius: 100%
+  transform: translate(-50%,-50%)
+  top: 100%
+  left: 100%
+
+#PreviewTitle
+  position: absolute
+  text-align: center
+  transform: translate(-50%,-50%)
+  top: 25%
+  left: 50%
+
+@mixin bg ($color)
+  background-color: $color
+  fill: $color
+
+@mixin txt ($color, $weight)
+  color: $color
+  font-family: $font
+  font-weight: $weight
+
+.PreviewBackgroundRoot
+  @include bg(#3D424A)
+
+.PreviewBackgroundPrimary
+  @include bg(#FEAE49)
+
+.PreviewBackgroundSecondary
+  @include bg(#57BEE6)
+
+.PreviewForegroundRoot
+  @include bg(#F1F1F1)
+
+.PreviewTextRoot
+  @include txt(#F1F1F1, 400)
+
+.PreviewTextTitle
+  @include txt(#F1F1F1, 600)
+
+.PreviewTextSubtitle
+  @include txt(#C0C0BE, 600)
