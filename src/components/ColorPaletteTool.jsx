@@ -13,7 +13,6 @@ function ColorPaletteTool() {
               <ColorPicker color="#C0C0BE" number="4"/>
               <ColorPicker color="#F1F1F1" number="5"/>
             </div>
-            
           </div>
         </div>
       </div>
