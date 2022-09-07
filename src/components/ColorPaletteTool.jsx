@@ -17,9 +17,9 @@ function ColorPaletteTool() {
             <div className="DivToolSettingsElements">
               <ColorUIElement elementType="PreviewBackgroundRoot" name="Background"/>
               <ColorUIElement elementType="PreviewIcon" name="Icon"/>
-              <ColorUIElement elementType="PreviewBackgroundPrimary" name="Background"/>
+              <ColorUIElement elementType="PreviewBackgroundPrimary" name="Extras 1"/>
               <ColorUIElement elementType="PreviewTextTitle" name="Title"/>
-              <ColorUIElement elementType="PreviewBackgroundSecondary" name="Background"/>
+              <ColorUIElement elementType="PreviewBackgroundSecondary" name="Extras 2"/>
               <ColorUIElement elementType="PreviewTextSubtitle" name="Subtitle"/>
               <ColorUIElement elementType="PreviewForegroundRoot" name="Foreground"/>
               <ColorUIElement elementType="PreviewTextRoot" name="Text"/>
