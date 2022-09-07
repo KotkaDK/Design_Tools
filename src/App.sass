@@ -1,5 +1,5 @@
 $light-color: #f1f1f1
-$main-color: #CFCFCF 
+$main-color: #E2E2E2 
 $dark-color: #232323
 
 $hover: 110%
@@ -81,7 +81,7 @@ button
 
 .DivToolSettingsMain
   width: 644px
-  height: 609px
+  height: 452px
 
   border-radius: 25px
 
@@ -183,14 +183,56 @@ button
 .PreviewForegroundRoot
   @include bg(#F1F1F1)
 
-.PreviewForegroundPrimary
+.PreviewIcon
   @include bg(#3D424A)
 
 .PreviewTextRoot
   @include txt(#F1F1F1, 400)
+  @include bg(#F1F1F1)
 
 .PreviewTextTitle
   @include txt(#F1F1F1, 600)
+  @include bg(#F1F1F1)
 
 .PreviewTextSubtitle
   @include txt(#C0C0BE, 600)
+  @include bg(#C0C0BE)
+
+.PreviewNoBG
+  background: none !important
+
+.DivToolSettingsElements
+  width: 100%px
+  height: 292px
+
+  border-radius: 0 0 25px 25px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  gap: 20px
+  padding: 20px
+
+.DivUIElementContainer
+  width: 292px
+  height: 58px
+  border-radius: 50px
+  background-color: $main-color
+  position: relative
+  
+.DivUIElementColor
+  width: 42px
+  height: 42px
+  margin: 8px
+  border-radius: 100%
+
+.DivUIElementNameContainer
+  position: absolute
+  top: 0px
+  right: 0px
+  width: 292px
+  height: 58px
+  font-family: $font
+  color: $dark-color
+  display: flex
+  justify-content: center
+  align-items: center
