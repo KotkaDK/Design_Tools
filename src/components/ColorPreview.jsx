@@ -1,10 +1,10 @@
 function ColorPreview(props) {
     return (
-      <div className="tooltip">
-        <div className={"DivColorPicker Color" + props.number} style={{ backgroundColor: props.color }}>
+      <div className="DivTooltipColorPreview">
+        <div className={"DivColorPicker Color" + props.number}>
           <p className="PColorNumber">{props.number}</p>
         </div>
-        <span class="tooltiptext">{props.color}</span>
+        <span class="SpanTooltipColorPreviewText">{props.color}</span>
       </div>
     );
   }
