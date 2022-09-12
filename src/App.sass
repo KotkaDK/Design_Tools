@@ -257,7 +257,7 @@ button
 
 .DivTooltipColorPreview .SpanTooltipColorPreviewText 
   visibility: hidden
-  width: 96px
+  width: 72px
   background-color: $dark-color
   color: $light-color
   font-family: $font
@@ -267,7 +267,7 @@ button
   position: absolute
   z-index: 1
   bottom: 90%
-  left: 50%
+  left: 58px
   margin-left: -56px
 
 .DivTooltipColorPreview .SpanTooltipColorPreviewText::after 
@@ -283,12 +283,18 @@ button
 .DivTooltipColorPreview:hover .SpanTooltipColorPreviewText 
   visibility: visible
 
+.DivUIElementColorSelectorBox
+  position: absolute
+  top: -4px
+  width: 58px
+  height: 62px
+  
 .DivUIElementColorSelector
   visibility: hidden
   position: absolute
   border-radius: 6px
   left: -45px
-  top: -36px
+  top: -32px
   background-color: $dark-color
   width: 148px
   height: 34px
@@ -299,7 +305,7 @@ button
   flex-wrap: wrap
   gap: 8px
 
-.DivUIElementContainer .DivUIElementColorSelector::after
+.DivUIElementContainer .DivUIElementColorSelectorBox .DivUIElementColorSelector::after
   content: ""
   position: absolute
   top: 100%
@@ -309,7 +315,7 @@ button
   border-style: solid
   border-color: $dark-color transparent transparent transparent
 
-.DivUIElementContainer:hover .DivUIElementColorSelector
+.DivUIElementContainer .DivUIElementColorSelectorBox:hover .DivUIElementColorSelector
   visibility: visible
 
 .DivUIElementColorSelectorOption

@@ -17,12 +17,14 @@ function ColorUIElement(props) {
         <div className="DivUIElementNameContainer">
           <p className="PivUIElementName">{props.name}</p>
         </div>
-        <div className="DivUIElementColorSelector">
-          <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color1"></div>
-          <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color2"></div>
-          <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color3"></div>
-          <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color4"></div>
-          <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color5"></div>
+        <div className="DivUIElementColorSelectorBox">
+          <div className="DivUIElementColorSelector">
+            <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color1"></div>
+            <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color2"></div>
+            <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color3"></div>
+            <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color4"></div>
+            <div onClick={(event) => handleClick(event)} className="DivUIElementColorSelectorOption Color5"></div>
+          </div>
         </div>
       </div>
     );
