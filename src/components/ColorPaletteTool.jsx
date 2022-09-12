@@ -29,7 +29,12 @@ function ColorPaletteTool() {
       </div>
       <div className="DivToolContainerSide right DivPhonePreview">
         <div className="DivPhone PreviewBackgroundRoot">
-          
+          <svg width="793.7" height="1122.5" version="1.1" viewBox="0 0 210 297" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
+            <g stroke-linecap="round" stroke-linejoin="round">
+              <path d="m0 0v37.207a37.207 37.207 0 0 0 37.207-37.207h-37.207z" className="PreviewBackgroundPrimary" stroke-width=".265"/>
+              <path d="m74.414 161.13v-37.207a37.207 37.207 0 0 0-37.207 37.207z" className="PreviewBackgroundSecondary" stroke-width=".265"/>
+            </g>
+          </svg>
         </div>
         <div className="DivPhone PreviewBackgroundRoot">
 
