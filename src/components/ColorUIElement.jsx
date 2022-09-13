@@ -4,11 +4,13 @@ function ColorUIElement(props) {
       var element = document.querySelector('.'+colorClass);
       var style = getComputedStyle(element);
       var color = style.backgroundColor;
-      var targetClass = '.'+props.elementType;
 
-      document.querySelector(targetClass).style.backgroundColor = color;
-      document.querySelector(targetClass).style.fill = color;
-      document.querySelector(targetClass).style.color = color;
+      var elements = document.getElementsByClassName(props.elementType);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        elements[i].style.backgroundColor = color;
+        elements[i].style.fill = color;
+        elements[i].style.color = color;
+      }
     }
 
     return (
