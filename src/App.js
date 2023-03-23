@@ -3,6 +3,7 @@ import './App.sass';
 import Logo from "./assets/DesignKotkaLogo.png";
 
 import ColorPaletteTool from './components/ColorPaletteTool';
+import ColorPickerTool from './components/ColorPickerTool';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </div>
       <div id="DivContent">
         <ColorPaletteTool/>
+        <ColorPickerTool/>
       </div>
     </div>
   );
